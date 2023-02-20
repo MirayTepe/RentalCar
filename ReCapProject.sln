@@ -11,7 +11,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Business", "Business\Busine
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{45B1A1E0-733A-4519-9F11-5B002D0CFEAE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApplicationCarRenal", "WebApplicationCarRenal\WebApplicationCarRenal.csproj", "{207D8EBB-6EB1-40A6-B6B6-18E866CD8D08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationCarRental", "WebApplicationCarRenal\WebApplicationCarRental.csproj", "{207D8EBB-6EB1-40A6-B6B6-18E866CD8D08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

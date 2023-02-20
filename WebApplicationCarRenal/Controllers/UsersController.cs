@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Sockets;
 
-namespace WebApplicationCarRenal.Controllers
+namespace WebApplicationCarRental.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

@@ -7,7 +7,7 @@ using Business.DependencyResolvers.Autofac;
 using DataAccess.Abstract;
 using DataAccess.Concrete.EntityFramework;
 
-namespace WebApplicationCarRenal
+namespace WebApplicationCarRental
 {
     public class Program
     {

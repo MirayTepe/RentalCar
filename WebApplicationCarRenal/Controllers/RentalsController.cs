@@ -3,7 +3,7 @@ using Entities.Concrete;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace WebApplicationCarRenal.Controllers
+namespace WebApplicationCarRental.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]

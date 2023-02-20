@@ -1,4 +1,4 @@
-namespace WebApplicationCarRenal
+namespace WebApplicationCarRental
 {
     public class WeatherForecast
     {
