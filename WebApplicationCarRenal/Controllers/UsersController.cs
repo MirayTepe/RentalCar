@@ -15,45 +15,45 @@ namespace WebApplicationCarRental.Controllers
         {
             _userService = userService;
         }
-        [HttpGet("getall")]
-        public IActionResult GetAll()
-        {
-            var result=_userService.GetAll();
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-            return BadRequest(result);
-        }
-        [HttpPost("add")]
-        public IActionResult Add(User user)
-        {
-            var result = _userService.AddUser(user);
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-            return BadRequest(result);
-        }
-        [HttpPost("delete")]
-        public IActionResult Delete(User user)
-        {
-            var result = _userService.DeleteUser(user);
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-            return BadRequest(result);
-        }
-        [HttpPost("update")]
-        public IActionResult Update(User user)
-        {
-            var result = _userService.UpdateUser(user);
-            if (result.Success)
-            {
-                return Ok(result);
-            }
-            return BadRequest(result);
-        }
+        //[HttpGet("getall")]
+        //public IActionResult GetAll()
+        //{
+        //    var result=_userService.GetAll();
+        //    if (result.Success)
+        //    {
+        //        return Ok(result);
+        //    }
+        //    return BadRequest(result);
+        //}
+        //[HttpPost("add")]
+        //public IActionResult Add(User user)
+        //{
+        //    var result = _userService.AddUser(user);
+        //    if (result.Success)
+        //    {
+        //        return Ok(result);
+        //    }
+        //    return BadRequest(result);
+        //}
+        //[HttpPost("delete")]
+        //public IActionResult Delete(User user)
+        //{
+        //    var result = _userService.DeleteUser(user);
+        //    if (result.Success)
+        //    {
+        //        return Ok(result);
+        //    }
+        //    return BadRequest(result);
+        //}
+        //[HttpPost("update")]
+        //public IActionResult Update(User user)
+        //{
+        //    var result = _userService.UpdateUser(user);
+        //    if (result.Success)
+        //    {
+        //        return Ok(result);
+        //    }
+        //    return BadRequest(result);
+        //}
     }
 }

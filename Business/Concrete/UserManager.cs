@@ -19,32 +19,25 @@ namespace Business.Concrete
     public class UserManager : IUserService
     {
         IUserDal _userDal;
-        public UserManager(IUserDal userDal) {
-        
+
+        public UserManager(IUserDal userDal)
+        {
             _userDal = userDal;
         }
-        [ValidationAspect(typeof(UserValidator))]
-        public IResult AddUser(User user)
+
+        public List<OperationClaim> GetClaims(User user)
+        {
+            return _userDal.GetClaims(user);
+        }
+
+        public void Add(User user)
         {
             _userDal.Add(user);
-            return new SuccessResult(UserMessages.UserAdded);
         }
 
-        public IResult DeleteUser(User user)
+        public User GetByMail(string email)
         {
-           _userDal.Delete(user);
-            return new SuccessResult(UserMessages.UserDeleted);
-        }
-
-        public IDataResult<List<User>> GetAll()
-        {
-            return new SuccessDataResult<List<User>>(_userDal.GetAll(),UserMessages.UserListed);
-        }
-
-        public IResult UpdateUser(User user)
-        {
-           _userDal.Update(user);
-            return new SuccessResult(UserMessages.UserUpdated);
+            return _userDal.Get(u => u.Email == email);
         }
     }
 }
